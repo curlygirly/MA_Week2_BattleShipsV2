@@ -1,3 +1,5 @@
+require_relative 'ship'
+
 class Board
 
   def initialize(rows, columns)
@@ -9,6 +11,7 @@ class Board
   end
 
   def place(ship, x, y)
+    @grid[[x, y]] = ship
   end
 
 end

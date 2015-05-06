@@ -7,7 +7,7 @@ feature 'create board and put ships on board' do
     board = Board.new(3,3)
     ship = Ship.new
 
-    expect { board.place(ship,2,2) }.to be(true)
+    expect { board.place(ship,2,2) } == true
 
   end
 
